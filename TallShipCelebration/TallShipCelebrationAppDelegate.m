@@ -2,22 +2,33 @@
 //  TallShipCelebrationAppDelegate.m
 //  TallShipCelebration
 //
-//  Created by Aaron Wolverton on 8/22/13.
+//  Created by Aaron Wolverton on 6/27/13.
 //  Copyright (c) 2013 Aaron Wolverton. All rights reserved.
 //
 
 #import "TallShipCelebrationAppDelegate.h"
+#import "ShipsViewController.h"
+#import "FlagshipNiagraViewController.h"
+
 
 @implementation TallShipCelebrationAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    
     return YES;
 }
+
+// to get my scrolling to work I used user defined runtime attributes http:// stackoverflow.com/questions/2824435/uiscrollview-not-scrolling?lq=1
+
+// Tutorial for the correct way to do a UIWebView to load a website http: //www.youtube.com/watch?v=zzoqnd8UP-M
+
+// Tutorial for correctly using an activity indicator in a UIWebView  http ://www.youtube.com/watch?v=KMCh6k63dFk&NR=1&feature=fvwp
+
+
+// Tutorial for correct way to do a table view in storyboard http:// www.youtube.com/watch?v=2_-Gpv_-nWU&list=PL31A1002BBDBB5713
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
@@ -29,6 +40,10 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+  
+       // NSArray *values = [[NSArray alloc] initWithObjects:textView.text,nil];
+       // [values writeToFile:[self saveFilePath] atomically:YES];
+    
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application

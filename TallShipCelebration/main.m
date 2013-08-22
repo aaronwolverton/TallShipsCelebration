@@ -2,7 +2,7 @@
 //  main.m
 //  TallShipCelebration
 //
-//  Created by Aaron Wolverton on 8/22/13.
+//  Created by Aaron Wolverton on 6/27/13.
 //  Copyright (c) 2013 Aaron Wolverton. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 #import "TallShipCelebrationAppDelegate.h"
 
-int main(int argc, char * argv[])
+int main(int argc, char *argv[])
 {
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([TallShipCelebrationAppDelegate class]));
